@@ -18,13 +18,24 @@
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
+  display: flex;
   float: none;
   vertical-align: top;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+/*.navbar .navbar-collapse {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+} */
+
+nav ul {
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 175%;
 }
 
 #donate_button {
@@ -32,4 +43,21 @@
     margin: 4vh 8vw;
     background-color: black;
     color: white;
+}
+
+#logo {
+    float: left;
+    margin: 3vh 6vw 0vh 6vw;
+}
+
+/*li:not(:last-child) {
+    border-right:solid 1px #fff; // This will not give border to last li element
+}*/
+
+.social_media {
+    margin-top: 1vh;
+    float: left;
+    height: 4vh;
+    margin-left: 1vw;
+    /*position: fixed;*/
 }
