@@ -1,0 +1,35 @@
+/*
+	Theme Name: GT Bits of Good
+	Author: GT Bits of Good
+	Description: Theme for Rebuilding Together Atlanta
+    ******************************************************************
+    I think I will eventually have to compile these css files into one
+    monolithic css file, so try to be as specific as possible when referencing
+    tags (use id's and classes instead of just refering to all tags of a certain
+    type whenever possible.)
+*/
+
+#navbar {
+    margin: 10vh 20vw;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: black;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#donate_button {
+    float: right;
+    margin: 4vh 8vw;
+    background-color: black;
+    color: white;
+}
