@@ -7,40 +7,89 @@ a header.php wordpress thing when I we change these html pages into php -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./../img/rebuildingtogetheratlantalogo.png" title="Logo" width="24" height="24">
+
+    <!-- linked stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/about-us.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/about-us.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
+
+
 <body>
-    <div class="col">
-        <div class="row">
-            <button type="button" class="btn-lg" id="donate_button">Donate</button>
-        </div>
-        <div class="row">
-             <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navMenu">
-                        <ul class="nav navbar-nav">
-                            <li><a class="menuElement" href="index.html">Home</a></li>
-                            <li><a class="menuElement" href="#">About</a></li>
-                            <li><a class="menuElement" href="news.html">News</a></li>
-                            <li><a class="menuElement" href="partners.html">Partners</a></li>
-                            <li><a class="menuElement" href="homeowners.html">Homeowners</a></li>
-                            <li><a class="menuElement" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+
+  <div class="col">
+      <div class="row">
+          <div class="col-lg-2">
+
+              <img src="img/rebuildingtogetheratlantalogo.png" id="logo">
+              <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto">
+                  <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                  <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                  <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+              </div>
+          </div>
+
+          <button type="button" class="btn-lg" id="donate_button">Donate</button>
+      </div>
+      <div class="row">
+           <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+              <div class="container-fluid">
+                      <div class="navbar-header" style="display: none">
+                          <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto" id="sm_photos">
+                              <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                              <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                              <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+                          </div>
+                      </div>
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navMenu">
+                      <ul class="nav navbar-nav">
+                          <li><a class="menuElement" href="#" style="color: #FFFFFF">Home</a></li>
+                          <li><a class="menuElement" href="about-us.html" style="color: #57B7DD">About</a></li>
+                          <li><a class="menuElement" href="news.html" style="color: #E76E34">News</a></li>
+                          <li><a class="menuElement" href="partners.html" style="color: #E44043">Partners</a></li>
+                          <li><a class="menuElement" href="homeowners.html" style="color: #699646">Homeowners</a></li>
+                          <li><a class="menuElement" href="contact.html" style="color: #FBC52D">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+
+
+
+    <div class="backsplash">
+        <img src="img/Background.png"
+            id ="aboutus">
+        <p class="backsplashtext">About Us</p>
+
+
+            <ul id="bottomnav">
+              <li><a> Home </a></li>
+              <li><a> About </a></li>
+              <li><a> Work </a></li>
+              <li><a> Clients </a></li>
+              <li><a> Contact </a></li>
+            </ul>
     </div>
+
+
+
+
+
+
+
+
 </body>
 </html>
