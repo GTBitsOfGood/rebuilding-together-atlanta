@@ -113,3 +113,30 @@ nav ul {
             margin: 0;
         }
 }
+
+
+#background {
+
+    width: 100%;
+
+    /*position: absolute;*/
+
+}
+
+
+#greenBar {
+
+    width: 100%;
+
+}
+
+
+#meetOurPartners {
+
+    margin: auto;
+
+    text-align: center;
+
+    color: red;
+
+}
