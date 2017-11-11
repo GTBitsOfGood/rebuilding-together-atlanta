@@ -111,5 +111,14 @@ nav ul {
         }
         #navbar {
             margin: 0;
+            background-color: white;
+        }
+        #navMenu {
+            background-color: black;
+        }
+
+        #burger {
+            margin-top: 20px;
+            background-color: black;
         }
 }
