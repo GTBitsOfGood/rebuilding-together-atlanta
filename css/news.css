@@ -4,3 +4,83 @@
     tags (use id's and classes instead of just refering to all tags of a certain
     type whenever possible.)
 */
+/*
+.backsplash {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+#aboutus {
+  max-width: 100%;
+  height: auto;
+  z-index:-2;
+}
+
+.backsplash {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+
+}
+
+/* backsplash title text*/
+.backsplashtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "American Typewriter", Courier, serif;
+    font-size: 7vw;
+    text-decoration: none;
+    border-bottom: 5px solid #70B8E1;
+    border-top: 5px solid #70B8E1;
+}
+
+
+#bottomnav {
+  margin:0;
+  padding:0;
+  text-align:center;
+  width: 100%;
+
+  position: absolute;
+  bottom: 25px;
+  list-style: none;
+  background-color: transparent;
+
+}
+/*
+.nav{
+    margin:0;
+    padding:0;
+    text-align:center;
+    width: 100%;
+
+    position: absolute;
+    bottom: 25px;
+    list-style: none;
+    background-color: transparent;
+
+}
+*/
+
+
+#bottomnav li {
+  list-style-type: none;
+  display:inline-block;
+  font-family: "American Typewriter", Courier, serif;
+  margin: 0;
+  padding: 5px;
+}
+
+#bottomnav a {
+  color: black;
+  font-size: 1.5vw;
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+#bottomnav li+li { border-left: 2px solid #000000 }

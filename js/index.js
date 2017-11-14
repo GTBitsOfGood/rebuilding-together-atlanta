@@ -4,11 +4,11 @@ function checkSize() {
 
 $(document).ready(function() {
 
-    if (checkSize()) {
-        $("#mobile-logo").css("display", "inline-block");
-    } else {
-        $("#mobile-logo").css("display", "none");
-    }
+    // if (checkSize()) {
+    //     $("#mobile-logo").css("display", "inline-block");
+    // } else {
+    //     $("#mobile-logo").css("display", "none");
+    // }
 
     // logic for making nav bar responisve
     $(window).resize(function() {
@@ -23,13 +23,19 @@ $(document).ready(function() {
     });
 
 
-    // Your code here.
+    // Handle section switching for content
     $('.backsplash ul li').click(function() {
-    var i = $(this).index();
-    $('.bottomsection').hide();
-    $('#section' + (i+1)).show();
-    $(this).siblings('li').css("fontWeight", "normal");
-    $(this).css("fontWeight", "bold");
+        let i = $(this).index();
+        $('.bottomsection').hide();
+        $('#section' + (i+1)).show();
+        $(this).siblings('li').css("fontWeight", "normal");
+        $(this).css("fontWeight", "bold");
     });
 
+    // Handle mouseover events for the dropdown menu
+    $(".nav>li.dropdown").hover(
+        function() {
+            $(this).toggleClass("open");
+        }
+    );
  });

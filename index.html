@@ -14,23 +14,19 @@ a header.php wordpress thing when I we change these html pages into php -->
     <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-    <div class="col">
+    <header>
         <div class="row">
-            <div class="col-lg-2">
-
-                <img src="img/rebuildingtogetheratlantalogo.png" id="logo">
-                <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto">
+            <div class="col-sm-2">
+                <div id="logo-social">
+                    <img src="img/clearlogo.png" id="logo">
                     <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
                     <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
                     <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
                 </div>
             </div>
-
-            <button type="button" class="btn-lg" id="donate_button">Donate</button>
-        </div>
-        <div class="row">
-             <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-                <div class="container-fluid">
+            <div class="col-sm-8">
+                <nav class="navbar" id="navbar">
+                    <div class="container-fluid">
                         <div class="navbar-header" style="display: none">
                             <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto" id="sm_photos">
                                 <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
@@ -38,7 +34,7 @@ a header.php wordpress thing when I we change these html pages into php -->
                                 <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
                             </div>
                         </div>
-                        <img src="img/rebuildingtogetheratlantalogo.png" id="mobile-logo">
+                        <!-- <img src="img/rebuildingtogetheratlantalogo.png" id="mobile-logo"> -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" id="burger" data-target="#navMenu">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -47,18 +43,46 @@ a header.php wordpress thing when I we change these html pages into php -->
                     </div>
                     <div class="collapse navbar-collapse" id="navMenu">
                         <ul class="nav navbar-nav">
-                            <li><a class="menuElement" href="#" style="color: #FFFFFF">Home</a></li>
-                            <li><a class="menuElement" href="about-us.html" style="color: #57B7DD">About</a></li>
-                            <li><a class="menuElement" href="news.html" style="color: #E76E34">News</a></li>
-                            <li><a class="menuElement" href="partners.html" style="color: #E44043">Partners</a></li>
-                            <li><a class="menuElement" href="homeowners.html" style="color: #699646">Homeowners</a></li>
-                            <li><a class="menuElement" href="contact.html" style="color: #FBC52D">Contact</a></li>
+                            <li><a href="#" style="color: #FFFFFF">Home</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle about" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Safe and Healthy Homes</a></li>
+                                    <li><a href="#">Board of Directors</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="news.html" class="news">News</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle partners" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partners</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Corporate Partners</a></li>
+                                    <li><a href="#">Become a Partner</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle homeowners" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homeowners</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Meet the Faces</a></li>
+                                    <li><a href="#">Application</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="contact.html" style="color: #FBC52D">Contact</a></li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            <div class="col-sm-2 text-center">
+                <button type="button" class="btn-lg" id="donate-button">Donate</button>
+            </div>
         </div>
-    </div>
+                
+        </div>
+    </header>
     <div>
         <img src="img/Background.png" id="background">
     </div>

@@ -9,15 +9,45 @@
     type whenever possible.)
 */
 
-#navbar {
-    margin: 10vh 20vw;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background-color: black;
+#logo-social {
+    margin: auto;
+    width: 150px;
 }
 
+/* Color definitions */
+.home {
+    color: #FFFFFF;
+}
+.about {
+    color: #57B7DD;
+}
+.news {
+    color: #E76E34;
+}
+.partners {
+    color: #E44043;
+}
+.homeowners {
+    color: #699646;
+}
+.contact {
+    color: #FBC52D;
+}
 
+#navbar {
+    border: 0;
+    border-radius: 0;
+    background-color: #1B1B1B;
+    font-family: "American Typewriter", Courier;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+header {
+    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+}
 
 .navbar .navbar-nav {
   display: flex;
@@ -25,34 +55,30 @@
   vertical-align: top;
 }
 
-/*.navbar .navbar-collapse {
-  justify-content: center;
-  width: 100%;
-  display: flex;
-} */
-
-nav ul {
-  list-style: none;
-  margin: 0 2px;
-  margin-top: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  font-size: 125%;
+.navbar-collapse {
+    padding: 0px;
 }
 
-#donate_button {
-    float: right;
-    margin: 4vh 8vw;
+nav ul {
+  justify-content: space-around;
+}
+
+.divider {
+    margin: 5px 0px 5px 0px;
+    border-left: 1px solid #FFFFFF;
+}
+
+#donate-button {
+    margin-left: auto;
+    margin-right: auto;    
+    /*margin: 4vh 8vw;*/
     background-color: black;
     color: white;
 }
 
 #logo {
-    float: left;
-    width: 125px;
-    height: auto;
-    margin: 3vh 6vw 0vh 6vw;
+    /*float: left;*/
+    width: inherit;
 }
 
 /*li:not(:last-child) {
@@ -64,11 +90,11 @@ nav ul {
     float: left;
     height: auto;
     width: 25px;
-    margin-left: 1vw;
+    margin-left: 12px;
     /*position: fixed;*/
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .navbar-header {
             float: none;
         }
