@@ -127,7 +127,7 @@ nav ul {
 }
 #logo {
     /*float: left;*/
-    
+
     width: inherit;
 }
 /*li:not(:last-child) {
@@ -175,7 +175,7 @@ nav ul {
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    
+
     .navbar-collapse.collapse.in {
         display: block!important;
     }
@@ -255,13 +255,12 @@ nav ul {
 }
 
 
-.redheaders {
+.meetOurPartners {
 
     margin: auto;
 
     text-align: center;
 
-    color: red;
 
     font-size: 50px;
 
@@ -281,16 +280,35 @@ nav ul {
 #partnersLinks {
     text-align: center;
     margin: 10px;
+    padding: 10px;
 
 }
 #BecomeAPartner {
-    background-color: red;
+    /*background-color: red;*/
+    font-style: italic;
     text-align: center;
     margin: auto;
     max-width: 300px;
+    text-decoration: underline;
 
 }
 
 #bottomofpage {
     margin-bottom: 500px;
+}
+
+#homepageTitleOnImage {
+    position: absolute;
+    color: #94D388;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    top: 135px;
+    width: 100%;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    letter-spacing: 2px;
 }
