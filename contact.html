@@ -13,31 +13,130 @@ a header.php wordpress thing when I we change these html pages into php -->
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-    <div class="col">
-        <div class="row">
-            <button type="button" class="btn-lg" id="donate_button">Donate</button>
+    <div class="row" id="navrow">
+        <div class="col-sm-2">
+            <div id="logo-social">
+                <img src="img/clearlogo.png" id="logo">
+                <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+            </div>
         </div>
-        <div class="row">
-             <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+        <div class="col-sm-8">
+            <nav class="navbar" id="navbar">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                    <div class="navbar-header" style="display: none">
+                        <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto" id="sm_photos">
+                            <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                            <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                            <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="navMenu">
-                        <ul class="nav navbar-nav">
-                            <li><a class="menuElement" href="index.html">Home</a></li>
-                            <li><a class="menuElement" href="about-us.html">About</a></li>
-                            <li><a class="menuElement" href="news.html">News</a></li>
-                            <li><a class="menuElement" href="partners.html">Partners</a></li>
-                            <li><a class="menuElement" href="homeowners.html">Homeowners</a></li>
-                            <li><a class="menuElement" href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                    <!-- <img src="img/rebuildingtogetheratlantalogo.png" id="mobile-logo"> -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" id="burger" data-target="#navMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown">
+                            <a href="about-us.html" class="about">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Safe and Healthy Homes</a></li>
+                                <li><a href="#">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="news.html" class="news">News</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown">
+                            <a href="partners.html" class="partners">Partners</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Corporate Partners</a></li>
+                                <li><a href="#">Become a Partner</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown">
+                            <a href="homeowners.html" class="homeowners">Homeowners</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Meet the Faces</a></li>
+                                <li><a href="#">Application</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="contact.html" class="contact">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
+        <div class="col-sm-2 text-center">
+            <button type="button" class="btn-lg" id="donate-button">Donate</button>
+        </div>
+    </div>
+    <div>
+        <img src="img/Background.png" class="main-image-at-top">
+    </div>
+    <div id="contact-inside-main-image">
+        <h1>Contact Us</h1>
+    </div>
+    <div>
+        <h1 class="header-for-different-locations"> Rebuilding Together Atlanta</h1>
+
+        <div class="make-these-bold">Address:</div>
+        <p class="paragraph-text">
+        P.O. Box 44884<br>
+        Alanta, GA 30336
+        </p>
+        <div class="make-these-bold">Phone:</div>
+        <p class="paragraph-text">
+        404-505-5599
+        </p>
+        <div class="make-these-bold">Fax:</div>
+        <p class="paragraph-text">
+        404-505-5577
+        </p>
+        <div class="make-these-bold">Email:</div>
+        <p class="paragraph-text">
+        <a>info@rebuildingtogether-atlanta.org</a>
+        </p>
+
+        <h1 class="header-for-different-locations"> Rebuilding Together National Office</h1>
+        <div class="make-these-bold">
+            Address:
+        </div>
+        <p class="paragraph-text">
+        Rebuilding Together<br>
+        1899 L Street NW, Suite 100<br>
+        Washington, D.C. 20036<br>
+        </p>
+
+        <div class="make-these-bold">
+            Phone:
+        </div>
+        <p class="paragraph-text">
+         202-483-9083<br>
+        </p>
+        <div class="make-these-bold">
+            Toll-Free:
+        </div>
+        <p class="paragraph-text">
+        1-800-473-4229<br>
+        </p>
+        <div class="make-these-bold">
+            Fax:
+        </div>
+        <p class="paragraph-text">
+        202-483-9081
+        </p>
+        <div class="make-these-bold">
+            Website:
+        </div>
+        <p class="paragraph-text">
+        <a href="https://www.rebuildingtogether.org">www.rebuildingtogether.org</a><br>
+        </p>
     </div>
