@@ -203,3 +203,94 @@ nav ul {
         background-color: black;
     }
 }
+
+nav ul {
+  list-style: none;
+  margin: 0 2px;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 125%;
+}
+
+#donate_button {
+    float: right;
+    margin: 4vh 8vw;
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    float: left;
+    width: 125px;
+    height: auto;
+    margin: 3vh 6vw 0vh 6vw;
+}
+
+
+.social_media {
+    margin-top: 10px;
+    float: left;
+    height: auto;
+    width: 25px;
+    margin-left: 1vw;
+}
+
+
+
+
+#background {
+
+    width: 100%;
+
+
+}
+
+
+#greenBar {
+    margin: auto;
+    width: 100%;
+
+}
+
+
+.redheaders {
+
+    margin: auto;
+
+    text-align: center;
+
+    color: red;
+
+    font-size: 50px;
+
+}
+
+#celebrating25 {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: red;
+
+    font-size: 80px;
+}
+
+#partnersLinks {
+    text-align: center;
+    margin: 10px;
+
+}
+#BecomeAPartner {
+    background-color: red;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+
+}
+
+#bottomofpage {
+    margin-bottom: 500px;
+}
