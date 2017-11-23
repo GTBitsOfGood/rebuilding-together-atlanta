@@ -4,3 +4,231 @@
     tags (use id's and classes instead of just refering to all tags of a certain
     type whenever possible.)
 */
+
+
+#logo-social {
+    margin: auto;
+    width: 150px;
+}
+/* Color definitions */
+
+a.home {
+    color: #FFFFFF;
+}
+a.about {
+    color: #57B7DD;
+}
+a.news {
+    color: #E76E34;
+}
+a.partners {
+    color: #E44043;
+}
+a.homeowners {
+    color: #699646;
+}
+a.contact {
+    color: #FBC52D;
+    font-weight: bolder;
+}
+
+#navbar {
+    border: 0;
+    border-radius: 0;
+    background-color: #1B1B1B;
+    font-family: "Arvo", Courier;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+header {
+    position: relative;
+}
+
+
+.news-section {
+    float: left;
+}
+.twitter {
+    float: right;
+}
+
+.carousel {
+    width: 100%;
+    padding: 0;
+}
+
+#navrow {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    margin: 2vh 0px 0px 0px;
+}
+#background {
+    width: 100%;
+}
+#greenBar {
+    width: 100%;
+}
+#meetOurPartners {
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+.backsplash {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* backsplash title text*/
+.backsplashtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arvo", Courier, serif;
+    font-size: 7vw;
+    text-decoration: none;
+}
+.backsplashtext.news {
+    border-bottom: 5px solid #E76E34;
+    border-top: 5px solid #E76E34;
+}
+
+.headerbox {
+    position: relative;
+}
+.navbar .navbar-nav {
+    display: flex;
+    float: none;
+    vertical-align: top;
+}
+.navbar-collapse {
+    padding: 0px;
+}
+nav ul {
+    justify-content: space-around;
+}
+.divider {
+    margin: 5px 0px 5px 0px;
+    border-left: 1px solid #FFFFFF;
+}
+#donate-button {
+    font-family: "Arvo";
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+#logo {
+    /*float: left;*/
+
+    width: inherit;
+}
+/*li:not(:last-child) {
+    border-right:solid 1px #fff; // This will not give border to last li element
+}*/
+
+.social_media {
+    margin-top: 10px;
+    float: left;
+    height: auto;
+    width: 25px;
+    margin-left: 12px;
+    /*position: fixed;*/
+}
+@media (max-width: 768px) {
+    header {
+        margin-top: 0px;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    #logo,
+    #donate_button,
+    .social_media {
+        display: none;
+    }
+    .navbar .navbar-nav {
+        display: block;
+        margin: 0px;
+    }
+    #navbar {
+        margin: 0;
+        background-color: white;
+    }
+    #navMenu {
+        background-color: black;
+    }
+    #burger {
+        margin-top: 20px;
+        background-color: black;
+    }
+}
+
+.main-image-at-top {
+    width: 100%;
+    position: relative;
+}
+
+#contact-inside-main-image {
+    position: absolute;
+    top: 130px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+}
+
+.header-for-different-locations {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.paragraph-text {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.make-these-bold {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+}
