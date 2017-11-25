@@ -6,7 +6,7 @@ a header.php wordpress thing when I we change these html pages into php -->
     <title>Rebuilding Together</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./../img/rebuildingtogetheratlantalogo.png" title="Logo" width="24" height="24">
+    <link rel="icon" href="./img/favicon.png" title="Logo">
 
     <!--Google Font: Arvo -->
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
@@ -25,50 +25,57 @@ a header.php wordpress thing when I we change these html pages into php -->
 
 <body>
 
-  <div class="col">
-      <div class="row">
-          <div class="col-md-2">
-
-              <img src="img/rebuildingtogetheratlantalogo.png" id="logo">
-              <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto">
-                  <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
-                  <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
-                  <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
-              </div>
-          </div>
-
-          <button type="button" class="btn-lg" id="donate_button">Donate</button>
-      </div>
-      <div class="row">
-           <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-              <div class="container-fluid">
-                      <div class="navbar-header" style="display: none">
-                          <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto" id="sm_photos">
-                              <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
-                              <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
-                              <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
-                          </div>
-                      </div>
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navMenu">
-                      <ul class="nav navbar-nav">
-                          <li><a class="menuElement" href="#" style="color: #FFFFFF">Home</a></li>
-                          <li><a class="menuElement" href="about-us.html" style="color: #57B7DD">About</a></li>
-                          <li><a class="menuElement" href="news.html" style="color: #E76E34">News</a></li>
-                          <li><a class="menuElement" href="partners.html" style="color: #E44043">Partners</a></li>
-                          <li><a class="menuElement" href="homeowners.html" style="color: #699646">Homeowners</a></li>
-                          <li><a class="menuElement" href="contact.html" style="color: #FBC52D">Contact</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </nav>
-      </div>
-  </div>
+    <div class="row" id="navrow">
+        <div class="col-sm-2">
+            <div id="logo-social">
+                <img src="img/clearlogo.png" id="logo">
+                <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <nav class="navbar" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header" style="display: none">
+                        <div class="row" style="margin-left: 5.5vw; width: 150px; height: auto" id="sm_photos">
+                            <a href="https://www.facebook.com/RTAtlanta/"><img src="img/facebook.png"  class="social_media"></a>
+                            <a href="https://www.instagram.com/RTAtlanta/"><img src="img/instagram.png" class="social_media"></a>
+                            <a href="https://twitter.com/rtatlanta"><img src="img/twitter.png" class="social_media"></a>
+                        </div>
+                    </div>
+                    <!-- <img src="img/rebuildingtogetheratlantalogo.png" id="mobile-logo"> -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" id="burger" data-target="#navMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li class="divider"></li>
+                        <li><a href="about-us.html" class="about" style="font-weight: bold;">About</a></li>
+                        <li class="divider"></li>
+                        <li><a href="news.html" class="news">News</a></li>
+                        <li class="divider"></li>
+                        <li><a href="partners.html" class="partners">Partners</a></li>
+                        <li class="divider"></li>
+                        <li><a href="homeowners.html" class="homeowners">Homeowners</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact.html" class="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-sm-2 text-center" id="donate">
+            <form action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx" method="post" name="PrePage">
+                <input name="LinkId" type="hidden" value="9c90dbcf-d54f-4571-8c69-280c14cbbba3">
+                <button type="submit" class="btn-lg" id="donate-button">Donate</button>
+                <!-- <input src="//content.authorize.net/images/donate-gold.gif" type="image"> -->
+            </form>
+        </div>
+    </div>
 
 
     <div class="backsplash">

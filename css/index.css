@@ -225,6 +225,12 @@ nav ul {
         color: black;
         background-color: #94D388;
     }
+    #donate {
+        display: none;
+    }
+    #logo-social {
+        display: none;
+    }
 }
 
 a:hover {
