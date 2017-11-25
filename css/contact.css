@@ -5,6 +5,12 @@
     type whenever possible.)
 */
 
+#contactus {
+  max-width: 100%;
+  height: auto;
+  z-index:-2;
+}
+
 
 #logo-social {
     margin: auto;
@@ -44,6 +50,7 @@ a.contact {
 header {
     position: relative;
 }
+
 
 
 .news-section {
@@ -92,10 +99,10 @@ header {
     font-family: "Arvo", Courier, serif;
     font-size: 7vw;
     text-decoration: none;
-}
-.backsplashtext.news {
-    border-bottom: 5px solid #E76E34;
-    border-top: 5px solid #E76E34;
+
+    border-bottom: 5px solid #FBC52D;
+    border-top: 5px solid #FBC52D;
+
 }
 
 .headerbox {
@@ -202,33 +209,29 @@ nav ul {
     }
 }
 
-.main-image-at-top {
-    width: 100%;
-    position: relative;
+
+p {
+  font-family: "Arvo", Courier;
+  font-size: 1.5vw;
+  padding-left: 5vw;
 }
 
-#contact-inside-main-image {
-    position: absolute;
-    top: 130px;
-    color: black;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    font-weight: bold;
+
+.bold {
+  font-family: "Arvo", Courier, serif;
+  font-weight: bold;
+  padding-left: 5vw;
 }
 
-.header-for-different-locations {
-    font-weight: bold;
-    padding: 20px;
+.bottomsection{
+  font-size: 1.5vw;
+  color: black;
+  margin-top: 3vw;
 }
 
-.paragraph-text {
-    padding: 20px;
-    font-size: 20px;
-}
-
-.make-these-bold {
-    font-weight: bold;
-    padding: 20px;
-    font-size: 20px;
+h1 {
+  font-family: "Arvo", Courier, serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding-left: 5vw;
 }
