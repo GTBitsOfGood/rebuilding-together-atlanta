@@ -18,7 +18,7 @@ a header.php wordpress thing when I we change these html pages into php -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/about-us.js"></script>
+
 
 </head>
 
@@ -78,6 +78,7 @@ a header.php wordpress thing when I we change these html pages into php -->
     </div>
 
 
+    <!--Top Backsplash Picture Section -->
     <div class="backsplash">
         <img src="img/Background.png"
             id ="aboutus">
@@ -130,32 +131,36 @@ a header.php wordpress thing when I we change these html pages into php -->
 
     </div>
 
-    <!--Board of Directors Section-->
+    <!--Board of Directors Photos Section-->
     <div class = "bottomsection toshow" id="section3">
       <h2> Board of Directors</h2>
 
       <div class="flex-container">
 
         <div class = "cell">
-          <img src="img/Lou_Barbieri.png" class="responsive-image">
-          <p class= "directorName">Louie Barbieri</p>
+          <img src="img/Lou_Barbieri.png" class="responsive-image"
+          class="myBtn" id="lou_barbieri">
+          <p class= "directorName">Louis Barbieri</p>
           <p class = "position">Chairman</p>
         </div>
 
         <div class = "cell">
-          <img src="img/Tsedey_Betru.jpg" class="responsive-image">
+          <img src="img/Tsedey_Betru.jpg" class="responsive-image"
+          class="myBtn" id="tsedey_betru">
           <p class = "directorName">Tsedey Betru</p>
           <p class = "position">Member</p>
         </div>
 
         <div class = "cell">
-          <img src="img/Alex_Bragg.jpg" class="responsive-image">
+          <img src="img/Alex_Bragg.jpg" class="responsive-image"
+          class="myBtn" id="alex_bragg">
           <p class= "directorName">Alex Bragg</p>
           <p class = "position">Member</p>
         </div>
 
         <div class = "cell">
-        <img src="img/Marc_Brambut.jpg" class="responsive-image">
+        <img src="img/Marc_Brambut.jpg" class="responsive-image"
+        class="myBtn" id="marc_brambut">
         <p class = "directorName">Marc N. Brambut</p>
         <p class = "position">Member</p>
       </div>
@@ -231,20 +236,175 @@ a header.php wordpress thing when I we change these html pages into php -->
           <p class = "directorName">Eric Zwygart</p>
           <p class = "position">Member</p>
         </div>
+      </div>
+<!-- End of Photos Section -->
 
 
+
+<!-- Code for pop-ups when you click on each profile picture -->
+
+    <!-- Lou Barbieri -->
+    <div id="lou_barbieri_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+          <img src="img/Lou_Barbieri.png" class="modalImage">
+          <h2>Louis Barbieri III</h2>
+
+          <p>Board of Directors Chairman Louis Barbieri has been on the Rebuilding Together Atlanta Board of Directors since 2012. Lou’s reason for joining the RTA board is the Organization’s Mission and the incredible positive impact that private organizations can have on our communities. Just volunteering for one of RTA’s projects and you can see the incredible impact RTA services provide our veterans and elderly.</p>
+          <br>
+          <p>An attorney, Lou is a Partner at Kilpatrick Townsend &amp; Stockton, LLP.</p>
+          <br>
+          <p>He attended Stetson University during his undergraduate studies, where he was a member of the Phi Beta Kappa fraternity and was the recipient of the Amory Underhill Award. Lou earned his law degree from the Levin College of Law at the University of Florida.
+          </p>
+          <br>
+          <p class="bold">Position: Chairman of the Board</p>
+          <br>
 
       </div>
-
-
-
-    </br>
-    </br>
-    </br>
-
     </div>
 
 
+    <!-- Tsedey Betru -->
+    <div id="tsedey_betru_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Tsedey_Betru.jpg" class="modalImage">
+        <h2>Tsedey Betru</h2>
+
+        <p>Tsedey Betru’s board service with RTA commences January 2018. </p>
+        <br>
+        <p>Tsedey works as Community Affairs Manager with Invest Atlanta.</p>
+        <br>
+        <p>She has a B.S. in Urban Planning from Cornell University and a M.S. in Nonprofit Management and Urban Policy Analysis from New School University. Tsedey is passionate about community-led neighborhood revitalization.
+        </p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
+
+    <!-- Alex Bragg -->
+    <div id="alex_bragg_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Alex_Bragg.jpg" class="modalImage">
+        <h2>Alex Bragg</h2>
+
+        <p>Alex Bragg joined the Rebuilding Together Atlanta Board of Directors in January 2016. Passionate about organizational behavior, leadership and education, Alex will be directly involved in Rebuilding Together Atlanta’s Educational and Advocacy outreach.<p>
+        <br>
+        <p>Currently, Alex works as the Head of 8th Grade, Middle School Design Thinking Coach, and Teacher at Mount Vernon Presbyterian School.</p>
+        <br>
+        <p>Alex holds a Master of Education Leadership from Columbia University, a Master of Arts degree in Teaching from the University of West Alabama, and a Bachelor of Science in Secondary Education from Auburn University.</p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
+    <!--Marc Brambut-->
+    <div id="marc_brambut_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Marc_Brambut.jpg" class="modalImage">
+        <h2>Marc N. Brambut</h2>
+
+        <p>Marc N. Brambrut has been a member of the Rebuilding Together Atlanta Board of Directors since 2011. Marc loves Rebuilding Together because as a volunteer, it provides the opportunity for such tangible and directly meaningful outreach.</p>
+        <br>
+        <p>He joined the Rebuilding Together Atlanta Board because at the end of a Rebuild Day, RTA has leveraged our sponsor’s generous financial contribution, our skilled tradespeople’s donation of their time, our materials suppliers donation of materials, and the volunteers hard work, and we’ve done some truly transformational work for people of need where it matters the most – in their home.</p>
+        <br>
+        <p>Marc is the Senior Vice President of Development at Novare Group, where they develop high-rise residential and mixed-use properties in urban markets throughout the southeast and southwest.</p>
+        <br>
+        <p>He attended University of Georgia, Johns Hopkins University and is a member of the Urban Land Institute.<p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    </br>
+    </br>
+    </br>
+  </div>
+
+    <!-- Javascript for opening and closing modals -->
+    <script type="text/javascript" src="js/about-us.js"></script>
+
+    <script>
+    // Get the array of all modals
+    var modal = document.getElementsByClassName('modal');
+    var modalArray = Array.from(modal);
+
+    // Get the array of all buttons that open modals
+    var btn = document.querySelectorAll('img.responsive-image');
+    var btnArray = Array.from(btn);
+
+    // Get the <span> element that closes the modals
+    var span = document.getElementsByClassName("close");
+
+
+    //open lou_barbieri_modal
+    btnArray[0].onclick = function() {
+        modalArray[0].style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[0].onclick = function() {
+        modalArray[0].style.display = "none";
+    }
+
+    //open tsedey_betru_modal
+    btn[1].onclick = function() {
+        modal[1].style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[1].onclick = function() {
+        modal[1].style.display = "none";
+    }
+
+    //open alex_bragg_modal
+    btn[2].onclick = function() {
+        modal[2].style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[2].onclick = function() {
+        modal[2].style.display = "none";
+    }
+
+    //open marc_brambut_modal
+    btn[3].onclick = function() {
+        modal[3].style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[3].onclick = function() {
+        modal[3].style.display = "none";
+    }
+
+
+
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 
 </body>
 </html>
