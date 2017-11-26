@@ -122,12 +122,13 @@ p {
 /*used to arrange and format the director's photos*/
 .flex-container {
   text-align: center;
-  position: relative;
   margin-left: 2.5%;
+  position: relative;
+
 }
 
 .responsive-image {
-  float: left;
+
   width: 30%;
   border-radius: 50%;
   border-style: solid;
