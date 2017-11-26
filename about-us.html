@@ -243,6 +243,14 @@ a header.php wordpress thing when I we change these html pages into php -->
         </div>
 
         <div class = "cell">
+          <img src="img/Greg_Ward.png" class="responsive-image"
+          class="myBtn" id="greg_ward">
+          <p class = "directorName">Greg Ward</p>
+          <p class = "position">Member</p>
+        </div>
+      </div>
+
+        <div class = "cell">
           <img src="img/Eric_Zwygart.png" class="responsive-image"
           class="myBtn" id="eric_zwygart">
           <p class = "directorName">Eric Zwygart</p>
@@ -424,7 +432,7 @@ a header.php wordpress thing when I we change these html pages into php -->
         <br>
         <p>Camille serves on the Boards of Directors of the Atlanta Symphony Orchestra, Woodruff Arts Center, Atlanta Symphony Associates, and the University of Georgia College of Family and Consumer Sciences, where she is an alumna. Camille formerly served on the Boards of the Atlanta Speech School, Atlanta Children’s Shelter and the Junior League of Atlanta.</p>
         <br>
-        <p class="bold">Position: Board Member</p>
+        <p class="bold">Position: Executive Directo</p>
         <br>
       </div>
     </div>
@@ -485,6 +493,26 @@ a header.php wordpress thing when I we change these html pages into php -->
       </div>
     </div>
 
+
+    <!--Amanda Rhein-->
+    <div id="amanda_rhein_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Amanda_Rhein.jpg" class="modalImage">
+        <h2>Amanda Rhein</h2>
+
+        <p>Amanda Rhein joined the Board of Directors for Rebuilding Together Atlanta in 2016. She is Senior Director of Transit Oriented Development and Real Estate at MARTA, the nation’s ninth largest transit system which includes heavy rail, bus and paratransit services. She oversees the Office of Transit Oriented Development (TOD) and Real Estate, whose vision is to create transit oriented communities that connect people to opportunities, drive sustainable community development and promote regional prosperity.</p>
+        <br>
+        <p>Amanda previously served as Interim Managing Director of Redevelopment at InvestAtlanta, Atlanta’s Development Authority and the economic development agency for the city of Atlanta. She oversaw the team responsible for managing and marketing the City’s primary economic development tools, tax allocation districts (TADs) and New Markets Tax Credits (NMTCs). While at Invest Atlanta Amanda doubled the number of TADs and funded over 30 projects which resulted in the investment of $3.5 billion in Atlanta’s most underserved communities.</p>
+        <br>
+        <p>A native of Cincinnati, Ohio, Ms. Rhein graduated from Boston College with a bachelor’s degree in sociology in 2002. She earned a Master of City and Regional Planning from the Georgia Institute of Technology in 2004.</p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
     <!--Darice Rose-->
     <div id="darice_rose_modal" class="modal">
       <div class="modal-content">
@@ -503,6 +531,63 @@ a header.php wordpress thing when I we change these html pages into php -->
         <br>
       </div>
     </div>
+
+    <!--Alyse Schwartz-->
+    <div id="alyse_schwartz_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Amanda_Rhein.jpg" class="modalImage">
+        <h2>Amanda Rhein</h2>
+
+        <p>Alyse Schwartz joined the RTA Board in March 2016. Alyse works with DigitasLBi as VP/Group Director and serves on the Board of the Inman Park Cooperative School. Alyse attended the University of Florida where she earned a Bachelors of Science in Journalism and Advertising, Minor in Business. A Marketing and Technology Executive, Alyse is particularly excited to join the RTA Board to help with social media and marketing.</p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
+    <!--Greg Ward -->
+    <div id="greg_ward_modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/Greg_Ward.jpg" class="modalImage">
+        <h2>Greg Ward</h2>
+
+        <p>Greg Ward rolls onto the RTA board of directors in January 2018. Greg is a graduate of Eastern Illinois University where he earned a B.S. degree in Finance. He went on to earn an MBA from Georgia State University. Greg is employed with Atlantic Pacific Real Estate Group as CIO. </p>
+        <br>
+        <p class="bold">Position: Board Member</p>
+        <br>
+      </div>
+    </div>
+
+      <!--Eric Zwygart -->
+      <div id="eric_zwygart_modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <img src="img/Eric_Zwygart.jpg" class="modalImage">
+          <h2>Eric Zwygart</h2>
+
+          <p>Eric Zwygart has been a board member at Rebuilding Together Atlanta since September of 2013. He became a board member at RTA to serve the organization and its mission of service and compassion for elderly and military veterans.</p>
+          <br>
+          <p>Eric is a Senior Manager in M&amp;A Transaction Services at Deloitte. Viewed from a home rebuilding perspective, his role at Deloitte is similar to a home inspector, helping clients (corporate and private equity investors) make informed decisions (through financial due diligence) about the business they would like to buy or invest in and also help clients prepare for the sale process of a business (through sell side due diligence).</p>
+          <br>
+          <p>Eric is a graduate of Florida State University, earning a Bachelor of Science in Accounting, and is also a member of the AICPA.</p>
+          <br>
+          <p class="bold">Position: Board Member</p>
+          <br>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -702,7 +787,7 @@ a header.php wordpress thing when I we change these html pages into php -->
         modal[14].style.display = "none";
     }
 
-    //open eric_zwygart_modal
+    //open greg_ward_modal
     btn[15].onclick = function() {
         modal[15].style.display = "block";
     }
@@ -710,6 +795,16 @@ a header.php wordpress thing when I we change these html pages into php -->
     // When the user clicks on <span> (x), close the modal
     span[15].onclick = function() {
         modal[15].style.display = "none";
+    }
+
+    //open eric_zwygart_modal
+    btn[16].onclick = function() {
+        modal[16].style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[16].onclick = function() {
+        modal[16].style.display = "none";
     }
 
 
