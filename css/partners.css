@@ -121,6 +121,7 @@
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    margin: 50px 0px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -131,6 +132,10 @@
     border-radius: 50%;
     background: grey;
     cursor: pointer;
+}
+
+.toShow {
+    display: none;
 }
 
 .slider::-moz-range-thumb {
@@ -145,11 +150,33 @@
     background-color: #E44043;
 }
 
+#myRange {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 footer {
     background-color: lightgrey;
     padding: 50px;
     margin-top: 200px;
     line-height: 30px;
+}
+
+.sliderSection {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#sponsorSlide {
+    margin-top: 50px;
+}
+
+#sponsorSlide h2 {
+    margin-top: 50px;
+    margin-bottom: 25px
 }
 
 @media (max-width: 600px) {
