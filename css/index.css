@@ -327,6 +327,12 @@ nav ul {
     margin-bottom: 500px;
 }
 
+.carousel-indicators {
+    z-index: 1;
+}
+
+
+
 #homepageTitleOnImage {
     position: absolute;
     color: #94D388;

@@ -24,8 +24,12 @@ $( document ).ready(function() {
             $("#foreman").show();
         } else if(val < 100) {
             $("#generalContractor").show();
-        } else {
+        } else if(val < 120) {
             $("#blockRenovator").show();
+        } else if(val < 140) {
+            $("#neighborhoodDeveloper").show();
+        } else {
+            $("#communityRevitalizer").show();
         }
 
     });
