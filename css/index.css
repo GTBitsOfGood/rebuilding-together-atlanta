@@ -355,13 +355,14 @@ nav ul {
 		1px 1px 0 #000;
     letter-spacing: 2px;*/
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Arvo", Courier, serif;
-    font-size: 5vw;
+    font-size: 4vw;
     text-decoration: BOLD;
-    color: #57B7DD;
+    /*color: #56BB38;*/
+    color: black;
     /*color: black;*/
     text-align: center;
 }
