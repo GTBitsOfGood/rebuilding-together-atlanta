@@ -4,17 +4,108 @@
     tags (use id's and classes instead of just refering to all tags of a certain
     type whenever possible.)
 */
-/*
-.backsplash {
-  max-width: 100%;
-  height: auto;
-}
-*/
 
-#aboutus {
+#news {
   max-width: 100%;
   height: auto;
   z-index:-2;
+}
+
+body {
+    font-family: "Arvo", Courier, serif;
+}
+
+#logo-social {
+    margin: auto;
+    width: 150px;
+}
+/* Color definitions */
+
+a.home {
+    color: #FFFFFF;
+}
+a.about {
+    color: #57B7DD;
+}
+a.news {
+    color: #E76E34;
+}
+a.partners {
+    color: #E44043;
+}
+a.homeowners {
+    color: #699646;
+}
+a.contact {
+    color: #FBC52D;
+    font-weight: bolder;
+}
+
+#navbar {
+    border: 0;
+    border-radius: 0;
+    background-color: #1B1B1B;
+    font-family: "Arvo", Courier;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+header {
+    position: relative;
+}
+
+.bottomsection h2 {
+  font-family: "Arvo", Courier, serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.news-section {
+    float: left;
+    width: calc(100%  - 300px);
+}
+
+.news-item {
+    height: 180px;
+    width: 100%;
+}
+
+.news-item img {
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.news-item h3 {
+    padding-top: 10px;
+}
+
+.twitter {
+    float: right;
+    width: 300px;
+}
+
+.carousel {
+    width: 100%;
+    padding: 0;
+}
+
+#navrow {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    margin: 2vh 0px 0px 0px;
+}
+#background {
+    width: 100%;
+}
+#greenBar {
+    width: 100%;
+}
+#meetOurPartners {
+    margin: auto;
+    text-align: center;
+    color: red;
 }
 
 .backsplash {
@@ -22,7 +113,6 @@
     position: relative;
     text-align: center;
     color: black;
-
 }
 
 /* backsplash title text*/
@@ -31,56 +121,144 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "American Typewriter", Courier, serif;
+    font-family: "Arvo", Courier, serif;
     font-size: 7vw;
     text-decoration: none;
-    border-bottom: 5px solid #70B8E1;
-    border-top: 5px solid #70B8E1;
+
+    border-bottom: 5px solid #FBC52D;
+    border-top: 5px solid #FBC52D;
+
+}
+
+.headerbox {
+    position: relative;
+}
+.navbar .navbar-nav {
+    display: flex;
+    float: none;
+    vertical-align: top;
+}
+.navbar-collapse {
+    padding: 0px;
+}
+nav ul {
+    justify-content: space-around;
+}
+.divider {
+    margin: 5px 0px 5px 0px;
+    border-left: 1px solid #FFFFFF;
+}
+#donate-button {
+    font-family: "Arvo";
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+#logo {
+    /*float: left;*/
+
+    width: inherit;
+}
+/*li:not(:last-child) {
+    border-right:solid 1px #fff; // This will not give border to last li element
+}*/
+
+.social_media {
+    margin-top: 10px;
+    float: left;
+    height: auto;
+    width: 25px;
+    margin-left: 12px;
+    /*position: fixed;*/
+}
+@media (max-width: 768px) {
+    header {
+        margin-top: 0px;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    #logo,
+    #donate_button,
+    .social_media {
+        display: none;
+    }
+    .navbar .navbar-nav {
+        display: block;
+        margin: 0px;
+    }
+    #navbar {
+        margin: 0;
+        background-color: white;
+    }
+    #navMenu {
+        background-color: black;
+    }
+    #burger {
+        margin-top: 20px;
+        background-color: black;
+    }
 }
 
 
-#bottomnav {
-  margin:0;
-  padding:0;
-  text-align:center;
-  width: 100%;
-
-  position: absolute;
-  bottom: 25px;
-  list-style: none;
-  background-color: transparent;
-
-}
-/*
-.nav{
-    margin:0;
-    padding:0;
-    text-align:center;
-    width: 100%;
-
-    position: absolute;
-    bottom: 25px;
-    list-style: none;
-    background-color: transparent;
-
-}
-*/
-
-
-#bottomnav li {
-  list-style-type: none;
-  display:inline-block;
-  font-family: "American Typewriter", Courier, serif;
-  margin: 0;
-  padding: 5px;
-}
-
-#bottomnav a {
-  color: black;
+p {
+  font-family: "Arvo", Courier;
   font-size: 1.5vw;
-  list-style:none;
-  margin: 0;
-  padding: 0;
 }
 
-#bottomnav li+li { border-left: 2px solid #000000 }
+#section1 {
+  margin-top: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+
+.bold {
+  font-family: "Arvo", Courier, serif;
+  font-weight: bold;
+}
+
+.bottomsection{
+  font-size: 1.5vw;
+  color: black;
+  margin-top: 3vw;
+}
+
+h1 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}

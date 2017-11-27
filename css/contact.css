@@ -213,14 +213,18 @@ nav ul {
 p {
   font-family: "Arvo", Courier;
   font-size: 1.5vw;
-  padding-left: 5vw;
+}
+
+#section1 {
+  margin-top: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 
 .bold {
   font-family: "Arvo", Courier, serif;
   font-weight: bold;
-  padding-left: 5vw;
 }
 
 .bottomsection{
@@ -233,5 +237,4 @@ h1 {
   font-family: "Arvo", Courier, serif;
   font-size: 2.5vw;
   font-weight: bold;
-  padding-left: 5vw;
 }
