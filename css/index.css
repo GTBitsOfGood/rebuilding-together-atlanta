@@ -16,6 +16,13 @@
 }
 /* Color definitions */
 
+#partnersLinks img {
+    display: inline-block;
+    width: 25vw;
+    margin: 1vw;
+    /*width: 100%;*/
+}
+
 a.home {
     color: #FFFFFF;
 }
@@ -334,7 +341,7 @@ nav ul {
 
 
 #homepageTitleOnImage {
-    position: absolute;
+    /*position: absolute;
     color: #94D388;
     font-weight: bold;
     text-align: center;
@@ -346,5 +353,24 @@ nav ul {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
-    letter-spacing: 2px;
+    letter-spacing: 2px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arvo", Courier, serif;
+    font-size: 5vw;
+    text-decoration: BOLD;
+    color: #57B7DD;
+    /*color: black;*/
+    text-align: center;
+}
+
+h1, h2, p {
+    font-family: "Arvo", Courier, serif;
+
+}
+
+.carousel-inner {
+    opacity: .3;
 }
